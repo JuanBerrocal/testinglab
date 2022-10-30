@@ -16,10 +16,11 @@ interface Props {
   onClose: () => void;
   title: string | React.ReactNode;
   labels: LabelProps;
+  children: React.ReactNode;
 }
 
 export const ConfirmationDialogComponent: React.FunctionComponent<Props> = props => {
-  const { isOpen, onAccept, onClose, title, labels, children } = props;
+  const { isOpen, onAccept, onClose, title, labels, children} = props;
 
   const handleAccept = () => {
     onAccept();

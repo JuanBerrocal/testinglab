@@ -13,7 +13,7 @@ import {
 
 export const RouterComponent: React.FunctionComponent = () => {
   return (
-    <HashRouter>
+     <HashRouter>
       <Switch>
         <Route
           exact={true}
